@@ -7,10 +7,7 @@ For motivations, technical details, etc please see the project `report.pdf` file
 
 These project contaisn the following steps:
 * Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `pos` and tagged the `bearish comment` as `neg`,
-
-> - Topic: Investor Sentiment on Twitter and its Link to the Stock Market
-> - How we achieve it:
-> 1. Use Tweepy to download tweets; choose 5000 of those tweets to build our model.
+> 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `pos` and tagged the `bearish comment` as `neg`,
 > 2. Implement POS tagging for these tweets; e.g. Positive == Bull and Negative == Bear in the stock market.
 > 3. Split by 8:2 (80% data for training and 20% for testing)
 > 4. Implement comparisons of accuracy, recall...among several machine learning models, e.g. Decision tree, SVM, Naive Bayes, etc.
