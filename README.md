@@ -1,9 +1,25 @@
 ## Chinese Stock Market Forecasting based on NLP Sentiment Analysis
-This project is a corpus analysis of the ____  from ___ to ___. It is built using `NLTK`, `spaCy`, `scattertext` and `markovify` libraries. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
+This project is a sentiment analysis of the Chinese Stock investors' online comments from ___ to ___. It is built using `NLTK`, `spaCy`, `scattertext` and `markovify` libraries. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
 
 For motivations, technical details, etc please see the project `report.pdf` file. 
-- HTML visualizations available at: https://lirondos.github.io/orgulloysatisfaccion/ [in Spanish].
-- For information about the traditional Christmas speech: https://en.wikipedia.org/wiki/Christmas_Eve_National_Speech.
+- For information about the website for getting comments: http://guba.eastmoney.com/list,zssh000001.html.
+
+
+These project contaisn the following steps:
+* Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `pos` and tagged the `bearish comment` as `neg`,
+
+> - Topic: Investor Sentiment on Twitter and its Link to the Stock Market
+> - How we achieve it:
+> 1. Use Tweepy to download tweets; choose 5000 of those tweets to build our model.
+> 2. Implement POS tagging for these tweets; e.g. Positive == Bull and Negative == Bear in the stock market.
+> 3. Split by 8:2 (80% data for training and 20% for testing)
+> 4. Implement comparisons of accuracy, recall...among several machine learning models, e.g. Decision tree, SVM, Naive Bayes, etc.
+> 5. Choose the one with the highest accuracy, then build our final model.
+> 6. Apply our final model to test the whole tweets' data set. In this case, for each day, we will get a number of positive tweets for
+> that day's stock market (M1) and a number of negative tweets for that day's stock market (M2). And we are able to use these two
+> numbers to get an Investor Sentiment Index (we will define it in our project).
+> 7. Finally, we will use our Investor Sentiment Index to compare with the SP500 index.
+
 
 This project contains the following files: 
 * The `speeches` folder contains the files with the Christmas speeches from 1975 to 2018 in `txt` format.
@@ -33,3 +49,4 @@ This project requires the following libraries:
 * `time`
 * `newspaper`
 * `matplotlib`
+* `TuShare`
