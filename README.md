@@ -7,14 +7,10 @@ For motivations, technical details, etc please see the project `report.pdf` file
 
 These project contaisn the following steps:
 > 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `positive` and tagged the `bearish comment` as `negative`, the remaining comments(which cannot see the clear sentiment polarity) were tagged as `neutral`；then we use numbers to represent the sentiment polarity -- `1` for `pisotive`, `-1` for `negative` and `0` for `neutal`.
-> 2. Implement POS tagging for these tweets; e.g. Positive == Bull and Negative == Bear in the stock market.
-> 3. Split by 8:2 (80% data for training and 20% for testing)
-> 4. Implement comparisons of accuracy, recall...among several machine learning models, e.g. Decision tree, SVM, Naive Bayes, etc.
-> 5. Choose the one with the highest accuracy, then build our final model.
-> 6. Apply our final model to test the whole tweets' data set. In this case, for each day, we will get a number of positive tweets for
-> that day's stock market (M1) and a number of negative tweets for that day's stock market (M2). And we are able to use these two
-> numbers to get an Investor Sentiment Index (we will define it in our project).
-> 7. Finally, we will use our Investor Sentiment Index to compare with the SP500 index.
+> 2. Split the data by 9:1 (90% data for training and 10% for testing), extract features, go through data visualization and then build up own claasifiers by using `LinearSVC`,`BernouliNB`,`NuSVC`,`LogisticRegression`,`MultinomialNB`,`DecisionTree` and `RandomForest`. 
+> 3. Implement comparisons of `Accuracy`, `Recall` and `Precision`...among thses machine learning classifiers we mentioned before, choose the best one as our final model.
+> 4. Apply our final model to test the whole data set. In this case, for each day, we will get a number of positive comments for that day's stock market (M1) and a number of negative comments for that day's stock market (M2). And we are able to use these two numbers to get an Investor Sentiment Index (we will explain how we define it in our project report).
+> 5. Finally, we will use our Investor Sentiment Index to compare with the .
 
 
 This project contains the following files: 
