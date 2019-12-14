@@ -6,8 +6,7 @@ For motivations, technical details, etc please see the project `report.pdf` file
 
 
 These project contaisn the following steps:
-* Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `pos` and tagged the `bearish comment` as `neg`,
-> 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `pos` and tagged the `bearish comment` as `neg`,
+> 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `positive` and tagged the `bearish comment` as `negative`, the remaining comments(which cannot see the clear sentiment polarity) were tagged as `neutral`；then we use numbers to represent the sentiment polarity -- `1` for `pisotive`, `-1` for `negative` and `0` for `neutal`.
 > 2. Implement POS tagging for these tweets; e.g. Positive == Bull and Negative == Bear in the stock market.
 > 3. Split by 8:2 (80% data for training and 20% for testing)
 > 4. Implement comparisons of accuracy, recall...among several machine learning models, e.g. Decision tree, SVM, Naive Bayes, etc.
