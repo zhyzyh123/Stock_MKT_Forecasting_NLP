@@ -1,19 +1,26 @@
 ## Chinese Stock Market Forecasting based on NLP Sentiment Analysis
-This project is a sentiment analysis of the Chinese Stock investors' online comments from ___ to ___. It is built using `NLTK`, `spaCy`, `scattertext` and `markovify` libraries. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
+This project is a sentiment analysis of the Chinese Stock investors' online comments from ___ to ___. It is built using `NLTK`, `Scikit-learn`, `jieba` and `markovify` libraries. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
 
-For motivations, technical details, etc please see the project `report.pdf` file. 
+- For motivations, technical details, etc please see the project `report.pdf` file. 
 - For information about the website for getting comments: http://guba.eastmoney.com/list,zssh000001.html.
-
+- For information about the libarary `jieba`, it is like the `nltk` library, which is especially for Chinese Natural Language Processing, involving tokenize and etc fucntions. You should download this by command `pip3 install jieba`. 
 
 These project contaisn the following steps:
-> 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `positive` and tagged the `bearish comment` as `negative`, the remaining comments(which cannot see the clear sentiment polarity) were tagged as `neutral`；then we use numbers to represent the sentiment polarity -- `1` for `pisotive`, `-1` for `negative` and `0` for `neutal`.
-> 2. Split the data by 9:1 (90% data for training and 10% for testing), extract features, go through data visualization and then build up own claasifiers by using `LinearSVC`,`BernouliNB`,`NuSVC`,`LogisticRegression`,`MultinomialNB`,`DecisionTree` and `RandomForest`. 
-> 3. Implement comparisons of `Accuracy`, `Recall` and `Precision`...among thses machine learning classifiers we mentioned before, choose the best one as our final model.
-> 4. Apply our final model to test the whole data set. In this case, for each day, we will get a number of positive comments for that day's stock market (M1) and a number of negative comments for that day's stock market (M2). And we are able to use these two numbers to get an Investor Sentiment Index (we will explain how we define it in our project report).
+> 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose xxxx of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `positive` and tagged the `bearish comment` as `negative`；then we use numbers to represent the sentiment polarity -- `1` for `pisotive`, `-1` for `negative`.  
+
+> 2. Split the data by 9:1 (90% data for training and 10% for testing), extract features, go through data    vectorization(count,binary,Tfidf) and then build up own claasifiers by using `LinearSVC`,`BernouliNB`,`NuSVC`,`LogisticRegression`,`MultinomialNB`,`DecisionTree` and `RandomForest`. 
+
+> 3. Implement comparisons of `Accuracy`, `Positive Recall`, `Negtive Recall` ,`Positive Precision`and `Negative Precision` among thses machine learning classifiers we mentioned before, choose the best one as our final model. 
+
+> 4. Apply our final model to test the whole data set. In this case, for each day, we will get a number of positive comments for that day's stock market (M1) and a number of negative comments for that day's stock market (M2). And we are able to use these two numbers to get an Investor Sentiment Index -- BI = ln[(1 + Mbul)/(l1+Mbear)] (we will explain how we define it in our project report).
+
 > 5. Finally, we will use our Investor Sentiment Index to compare with the .
 
 
+
+
 This project contains the following files: 
+
 * The `speeches` folder contains the files with the Christmas speeches from 1975 to 2018 in `txt` format.
 * The `Speech` class creates the object Speech with the information for a given speech.
 * The `Corpus` class creates the corpus object that contains the speeches to be analyzed. This class uses the files inside the `speeches` folder. This file also contain the methods to perform the lexical analysis of the created corpus. An example of output of this lexical analysis can be found inside the output.txt file.
