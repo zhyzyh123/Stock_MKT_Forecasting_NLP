@@ -8,7 +8,7 @@ import xlwt
 book = xlwt.Workbook(encoding='utf-8', style_compression=0)
 sheet = book.add_sheet('sheet', cell_overwrite_ok=True)
 
-# j的作用是对url不断进行修改，翻页
+# The role of j is to continuously modify the URL and turn the page
 for j in range(1, 1500):
     if j % 200 == 1:
         book = xlwt.Workbook(encoding='utf-8', style_compression=0)
