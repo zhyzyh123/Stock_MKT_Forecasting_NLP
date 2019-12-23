@@ -10,6 +10,7 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 >  "Jieba" (Chinese for "to stutter") Chinese text segmentation: built to be the best Python Chinese word segmentation module.
 
 >  More information could be found at https://github.com/fxsjy/jieba.
+- For Information about `tushare` library, information could be found at https://github.com/waditu/tushare. This libarary could do data collection, data cleaning and data storage for Chinese stock market's financial data. 
 
 
 
