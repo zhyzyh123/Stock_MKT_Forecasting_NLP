@@ -35,7 +35,7 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 * The `data` folder contains the files we need to process: `annotation_data.xlxs` - tagged comments; `annotation_data_after_segment` folder - contains `negative.txt` and `positive.txt` which are tagged comments after segment and are in `txt` format; `raw data` folder include the whole data set which were downloaded from website by using `urllib`.
 * The `crawler.py` script accessed the target website http://guba.eastmoney.com/list,zssh000001.html, used to extract the comments from this website and stored the raw data.
 * The `data_processing.py` script went through the `annotation_data.xlxs` and created the tagged corpus objects(`negative.txt` and `positive.txt`) that contains the comments to be trained and tested. 
-* The `classify.py` generated different classifiers, compared the accuracy, precision and recall of these classifiers, and built up the Investment Sentiment Index based on the best model we chose. The results of Investment Sentiment Index are stored in `date_BI.csv`. 
+* The `classify.py` generated different classifiers, compared the accuracy, precision and recall of these classifiers, and built up the Investment Sentiment Index based on the best model we chose. The results of Investment Sentiment Index are stored in `date_BI.csv`. In this file, we also do some data visualization for the comparision between Investor Sentiment Index and SSE Composite index. These results are stored inside the `Visualization` folder. 
 * The `model_comparison.py` script generated the results of comparison between different models.
 
 
