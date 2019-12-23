@@ -1,5 +1,7 @@
 ## Chinese Stock Market Forecasting based on NLP Sentiment Analysis
 
+* Group Members: Yuehuan Zhang, Ilsa Wu, Ran Dou, Xuanbo Mao
+
 This project is a sentiment analysis of the Chinese Stock investors' online comments from `2018-08-06` to `2019-12-17`. It is built using `Scikit-learn`, `jieba`, `urllib2` and etc. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
 
 
