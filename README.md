@@ -62,4 +62,9 @@ This project requires the following libraries:
 * `pandas`
 * `matplotlib`
 * `scipy`
+* `statsmodels`
+* `numpy`
+* `time`
+* `datetime`
+* `sys`
 
