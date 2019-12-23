@@ -7,7 +7,8 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 - For information about the website for getting comments: http://guba.eastmoney.com/list,zssh000001.html. This website is a online talking bar for Chinese stocks which had IPO in Shanghai Stock Exchange. 
 - For information about the `SSE Composite Index`, please see the website: https://en.wikipedia.org/wiki/SSE_Composite_Index.
 - For information about the libarary `jieba`, it is like the `nltk` library, which is especially for Chinese Natural Language Processing. You should download this by command `pip3 install jieba`. 
-> "Jieba" (Chinese for "to stutter") Chinese text segmentation: built to be the best Python Chinese word segmentation module.
+>  "Jieba" (Chinese for "to stutter") Chinese text segmentation: built to be the best Python Chinese word segmentation module.
+
 >  More information could be found at https://github.com/fxsjy/jieba
 
 
