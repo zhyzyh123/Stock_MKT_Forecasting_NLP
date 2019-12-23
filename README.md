@@ -33,7 +33,7 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 
 
 
-### This project contains the following files: 
+#### This project contains the following files: 
 
 * The `data` folder contains the files we need to process: `annotation_data.xlxs` - tagged comments; `annotation_data_after_segment` folder - contains `negative.txt` and `positive.txt` which are tagged comments after segment and are in `txt` format; `raw data` folder include the whole data set which were downloaded from website by using `urllib`.
 * The `crawler.py` script accessed the target website http://guba.eastmoney.com/list,zssh000001.html, used to extract the comments from this website and stored the raw data.
@@ -47,7 +47,7 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 
 
 
-This project requires the following libraries:
+#### This project requires the following libraries:
 * `urllib2`
 * `xlwt`
 * `jieba`
