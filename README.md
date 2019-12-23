@@ -1,12 +1,15 @@
 ## Chinese Stock Market Forecasting based on NLP Sentiment Analysis
 
-This project is a sentiment analysis of the Chinese Stock investors' online comments from `2018-08-06` to `2019-12-17`. It is built using `NLTK`, `Scikit-learn`, `jieba` and `markovify` libraries. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
+This project is a sentiment analysis of the Chinese Stock investors' online comments from `2018-08-06` to `2019-12-17`. It is built using `Scikit-learn`, `jieba` `urllib2` and etc. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
 
 
 - For motivations, technical details, etc please see the project `report.pdf` file. 
 - For information about the website for getting comments: http://guba.eastmoney.com/list,zssh000001.html. This website is a online talking bar for Chinese stocks which had IPO in Shanghai Stock Exchange. 
 - For information about the `SSE Composite Index`, please see the website: https://en.wikipedia.org/wiki/SSE_Composite_Index.
-- For information about the libarary `jieba`, it is like the `nltk` library, which is especially for Chinese Natural Language Processing, involving tokenize and etc fucntions. You should download this by command `pip3 install jieba`. 
+- For information about the libarary `jieba`, it is like the `nltk` library, which is especially for Chinese Natural Language Processing. You should download this by command `pip3 install jieba`. 
+> "Jieba" (Chinese for "to stutter") Chinese text segmentation: built to be the best Python Chinese word segmentation module.
+> More information could be found at https://github.com/fxsjy/jieba
+
 
 
 These project contaisn the following steps:
@@ -40,7 +43,7 @@ This project contains the following files:
 
 
 This project requires the following libraries:
-* `urllib2·
+* `urllib2`
 * `xlwt`
 * `jieba`
 * `collections`
