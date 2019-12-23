@@ -19,7 +19,7 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 
 
 
-#### These project contains the following steps:
+#### This project contains the following steps:
 
 * 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose thousands of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `positive` and tagged the `bearish comment` as `negative`；then we use numbers to represent the sentiment polarity -- `1` for `positive`, `-1` for `negative`.  
 
