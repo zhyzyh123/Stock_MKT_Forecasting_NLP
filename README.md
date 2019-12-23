@@ -1,6 +1,6 @@
 ## Chinese Stock Market Forecasting based on NLP Sentiment Analysis
 
-This project is a sentiment analysis of the Chinese Stock investors' online comments from `2018-08-06` to `2019-12-17`. It is built using `Scikit-learn`, `jieba` `urllib2` and etc. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
+This project is a sentiment analysis of the Chinese Stock investors' online comments from `2018-08-06` to `2019-12-17`. It is built using `Scikit-learn`, `jieba`, `urllib2` and etc. This project was done for the course "Introduction to NLP in Python" at Brandeis University.
 
 
 - For motivations, technical details, etc. please see the project `report.pdf` file. 
@@ -9,11 +9,11 @@ This project is a sentiment analysis of the Chinese Stock investors' online comm
 - For information about the library `jieba`, it is like the `nltk` library, which is especially for Chinese Natural Language Processing. You should download this by command `pip3 install jieba`. 
 >  "Jieba" (Chinese for "to stutter") Chinese text segmentation: built to be the best Python Chinese word segmentation module.
 
->  More information could be found at https://github.com/fxsjy/jieba
+>  More information could be found at https://github.com/fxsjy/jieba.
 
 
 
-## * These project contains the following steps:
+### * These project contains the following steps:
 
 > 1. Use `urllib` package for accessing the website via `python` and then store the comments in `Excel`; choose thousands of them to do the further sentiment polarity tagging by our own, and we tagged the `bullish comment` as `positive` and tagged the `bearish comment` as `negative`；then we use numbers to represent the sentiment polarity -- `1` for `positive`, `-1` for `negative`.  
 
