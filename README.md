@@ -58,5 +58,5 @@ This project requires the following libraries:
 * `math`
 * `pandas`
 * `matplotlib`
-
+* `scipy`
 
